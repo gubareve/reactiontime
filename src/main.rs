@@ -1,10 +1,10 @@
-use termion;
-use termion::input::TermRead;
 use std::io;
-use termion::raw::IntoRawMode;
-use std::time::Instant;
 use std::thread;
 use std::time;
+use std::time::Instant;
+use termion;
+use termion::input::TermRead;
+use termion::raw::IntoRawMode;
 
 fn main() {
     // Set terminal to raw mode to allow reading stdin one key at a time
@@ -25,14 +25,12 @@ fn main() {
         // Read input (if any)
         let input = stdin.next();
 
-
         // If a key was pressed
         if let Some(Ok(key)) = input {
-            break;    
+            break;
         }
     }
 
     let elapsed = start.elapsed();
     println!("It took you {:?}\r", elapsed);
 }
-
