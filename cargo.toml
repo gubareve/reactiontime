@@ -3,6 +3,8 @@ name = "reactiontime"
 version = "0.1.0"
 authors = ["Evan Gubarev <evan@evangubarev.com>"]
 edition = "2018"
+license = "GPL-3.0"
+description = "This is a fun game to test your reaction time. To use it just exectue the command `reactiontime`"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
